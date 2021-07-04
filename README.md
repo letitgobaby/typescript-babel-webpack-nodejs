@@ -1,26 +1,55 @@
 
-## bareborn project spec
+## This Bareborn Project Spec
 
-- yarn                package manager
-- tsc                 type checker
-- babel               ES6 transpiler
-- webpack             bundler
-- eslint (tslint)     code grammer checker
-- prettier            code formatter
+- yarn (package manager)
+
+- tsc (type checker)
+
+- babel (ES6 transpiler)
+
+- webpack (bundler)
+
+- eslint (code grammer checker)
+
+- prettier (code formatter)
+
+<br/><br/>
+
+## Babel
+```
+yarn start
+```
+
+<br/>
 
 
+## Webpack 
 
-### # Webpack 
+```
+yarn bundle:dev -> dev 
+yarn bundle:prod -> prod
+```
 
-in this project, not install html-loader, style-loader, css-loader etc except babel-loader
-cuz it's for Node.js project not react whatever project
+in this project, not include html-loader, style-loader, css-loader etc except babel-loader <br/>
+it's for Node.js project
+<br/>
 
+## tsc
 
-## tsc for just checking *.ts type
+```
+yarn type-check
+```
 
-- yarn type-check
+this commnad do check types of *.ts files, not do transpile.<br/>
+<br/>
 
+## eslint, prettier
 
-### for eslint, prettier
+```
+/* do eslint */
+yarn eslint         // include prettier
+yarn eslint:fix     // auto format code
 
-- npx install-peerdeps --dev eslint-config-airbnb-base
+/* install */
+npx install-peerdeps --dev eslint-config-airbnb-base
+```
