@@ -7,8 +7,8 @@
     "start": "babel-node -x \".ts\" ./src/index.ts",
     "type-check": "tsc --noEmit",
     "type-check:watch": "yarn type-check -- --watch",
-    "bundle:dev": "tsc --noEmit && webpack --config ./webpack.config.js --mode=development",
-    "bundle:prod": "yarn eslint:fix && webpack --config ./webpack.config.js --mode=production",
+    "build:dev": "tsc --noEmit && webpack --config ./webpack.config.js --mode=development",
+    "build:prod": "yarn eslint:fix && webpack --config ./webpack.config.js --mode=production",
     "eslint": "eslint 'src/**/*.ts'",
     "eslint:fix": "eslint --fix 'src/**/*.ts'"
   },
